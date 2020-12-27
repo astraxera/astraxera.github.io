@@ -1,0 +1,87 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8"/>
+    <title>Home | Astra Xera</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbutton">
+
+                <i class="fas fa-bars"></i>
+
+            </label>
+
+            <label class="logo"><a href="index.html">AX</a></label>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">Bio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--add banner here-->
+        <section class="intro__banner"></section>
+        
+        <!--div ... primary content down here-->
+        <div class="background">
+            <div id="primary-content">
+                <!--main display as block-->
+                <main class="intro">
+                    <!--column-->
+
+                    <div class="column">
+                    <h1 class="section__title__intro">
+                        Hi, I am <strong>Astra Xera</strong>
+                    </h1>
+                    <p class="section__subtitle__intro">
+                        A secondary student from the Fraser Valley with a focus on art and design in digital media.
+                    </p>
+
+                    </div>
+
+                    <!---colomn-->
+                    
+                    <div class="column">
+
+                    <img src="images/bridge_circle.png" alt="a picture of astra xera" class="intro__img">
+                    <!--div class for each section of content...maybe-->
+                    
+                    </div>
+
+                </main>
+            </div>
+        </div>
+
+
+
+        <!--scrolly nav-->
+
+        <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY > 0)
+        })
+
+
+        </script>
+
+    <footer id="footer">
+                
+        <p>© ASTRAXERA</p>
+
+    </footer>
+
+
+
+    </body>
+</html>

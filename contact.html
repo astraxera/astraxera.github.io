@@ -1,0 +1,96 @@
+<!--put example email-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8"/>
+    <title>Contact | Astra Xera</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbutton">
+
+                <i class="fas fa-bars"></i>
+
+            </label>
+
+            <label class="logo"><a href="index.html">AX</a></label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">Bio</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--add banner here-->
+        <section class="pg3__banner"></section>
+        
+        <!--div ... primary content down here-->
+        <div class="background">
+            <div id="primary-content">
+                <!--main display as block-->
+                <main class="intro">
+
+
+                    <form action="mailto:astraxera@gmail.com" method="post" enctype="text/plain">
+                    <div class="form">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="First Name ">
+                        
+                    </div>
+
+                    <div class="form">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="Last Name " >
+                        
+                    </div>
+                    
+                    <div class="form">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="Email " >
+
+                    </div>
+
+                    <div class="form">
+                        <label for="message">Message</label>
+                        <textarea name="Message " id="message" ></textarea>
+                        
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+                </main>
+            </div>
+        </div>
+
+
+
+
+
+                <!--scrolly nav-->
+
+        <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY > 0)
+        })
+
+
+        </script>
+
+<footer id="footer">
+            
+    <p>© ASTRAXERA</p>
+
+</footer>
+
+
+    </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8"/>
+    <title>Portfolio | Astra Xera</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbutton">
+
+                <i class="fas fa-bars"></i>
+
+            </label>
+
+            <label class="logo"><a href="index.html">AX</a></label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">Bio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--add banner here-->
+        <section class="pg2__banner"></section>
+        
+        <!--div ... primary content down here-->
+        <div class="background">
+            <div id="primary-content">
+                <!--main display as block-->
+                <main class="intro">
+                    <!--column-->
+
+                   
+                        
+                       
+
+                  <!---    <div class="item_title_main"><h1>Selected Work</h1></div>  -->
+                    
+                    <!--first project-->
+
+                    <div class="column_port">
+
+                        <div Class="item_water"><Img id="pic"  src="images/watersquare.jpg"/><figcaption><h4>Reflection</h4><h5>Photography</h5></figcaption></div>
+                        <!--<div class="item_title_0">Reflection</div>  --><!--edit this phrase-->
+                        
+                    </div>
+
+                    <!--next project-->
+                    <div class="column_port"> 
+                        
+                        <div Class="item_basket"><Img id="pic"  src="images/basket_square.jpg"/><figcaption><h4>Youth</h4><h5>Photography</h5></figcaption></div>
+                        
+                    
+                    </div>  
+                    
+                    <div class="column_port">  
+
+                        <div class="item_body_drawing"><img id="pic"  src="images/kaito2.png"/><figcaption><h4>Kaito</h4><h5>3D Design</h5></figcaption></div>
+              <!--- <div class="item_title_2"><h4>Kaito</h4></div> -->
+                    
+                    </div> 
+                    
+
+                        <!---next project-->
+
+                        <!--make grid area over here...-->
+
+               <!--<div class="grid_area"> -->
+                    
+                       
+
+                        <!--next project-->
+
+                        <div class="column_port"> 
+                        
+                            <div Class="item_bridge"><Img id="pic"  src="images/bridge_final.jpg"/><figcaption><h4>Bridge</h4><h5>Photography</h5></figcaption></div>
+                            
+                        
+                        </div>  
+                    
+
+                        
+
+                       <!---next project-->
+                       
+                       
+                        
+                    <div class="column_port">
+
+                        <div class="item_head_drawing"><img id="pic" src="images/head_drawing.jpg"/><figcaption><h4>ASTRA</h4><h5>Digital Art</h5></figcaption></div>
+                          <!--  <div class="item_title_1"><h4>ASTRA</h4></div> -->
+                           <!---<div class="item_paragraph"><p>ASTRA is a project...</p></div>-->
+
+                        
+
+
+                        
+
+                    </div>
+<!--next project-->
+<!---make video responsive to deivice-->
+                    <div class="column_port">
+
+                        <style>
+                            video {
+                                max-width: 100%;
+                                height: auto;
+                            }
+                        </style>
+                        
+                       <div class="item_hb_video">
+                           <video width="576" height="324" controls>
+                                <source src="images/video/Typography_2-rendered.mp4" type="video/mp4">
+                       </video>
+                       <figcaption><h4>Happy Birthday</h4><h5>Typography, Motion</h5></figcaption>
+                        </div>
+                    
+                    </div>
+
+
+
+           <!--    </div>  -->
+
+                    
+
+                        
+                    <!--    <div class="item_title_3"><figcaption><h4>Happy Birthday</h4><h5>Typography, Motion</h5></figcaption></div> -->
+
+
+                        <!--write a caption for that later ^...make the styles now-->
+
+
+                        
+
+
+                    
+
+                
+
+                </main>
+            </div>
+        </div>
+
+
+
+
+
+                <!--scrolly nav-->
+
+        <script type="text/javascript">
+
+
+
+        window.addEventListener("scroll", function(){
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY > 0)
+        })
+
+        //make password portected page//
+        <!--hide
+        var password
+        var pass1="ax10";
+        password=prompt('Enter Password To View Page','');
+        if (password==pass1)
+        alert('correct password, click OK to enter.');
+        else{
+            alert('Sorry, you do not have access to this page. Click OK to go back');
+            window.location="index.html";
+
+        }
+            //-->
+        </script>
+
+
+        <footer id="footer">
+            
+                <p>© ASTRAXERA</p>
+            
+        </footer>
+
+    </body>
+</html>

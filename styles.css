@@ -1,0 +1,501 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+
+}
+
+
+
+h5 {
+    font-weight: lighter;
+}
+.background {
+    background: url(images/back.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 1em;
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+#footer {
+    background-color: rgb(109, 97, 80);
+    
+    padding: 3px;
+  
+    
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+
+}
+
+
+
+body{
+    font-family: montserrat;
+
+}
+nav {
+  /*  background: rgb(218, 212, 206); */
+    background: rgb(218, 212, 206);
+    opacity: 80%;
+    height: 80px;
+    width: 100%;
+    /*---add position fixed inorder 
+    to make sticky nav work--*/
+    position: fixed;
+
+    /*--add z-index makes nav appear ontop-*/
+    z-index: 100000;
+
+}
+
+label.logo  {
+    /*---add position relative for sticky-*/
+    position: relative;
+
+    color: cadetblue;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+
+}
+
+
+label.logo a{
+    color: cadetblue;
+    /*---make background none so the wheat colour doesn't show*/
+    background: none;
+
+}
+
+
+/*make logo media querie...wait there is one already...*/
+
+
+
+nav ul {
+
+position: relative;
+
+
+    float: right;
+    margin-right: 20px;
+
+}
+
+nav ul li {
+
+position: relative;
+
+
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+
+}
+
+
+nav ul li a {
+
+position: relative;
+
+    /*color: rgb(148, 147, 147); */
+
+    color: rgb(134, 134, 134);
+    font-size: 17px;
+    
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+
+}
+
+a.active, a:hover {
+    /*background: hsl(81, 36%, 59%); */
+    
+       /* background: rgb(209, 100, 81); */
+       background: wheat;
+    transition: .5s;
+
+
+}
+
+
+.checkbutton {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+
+    }
+        nav ul li a{
+            font-size: 16px;
+
+        }
+
+}
+
+
+
+@media (max-width: 858px) {
+    .checkbutton{
+        display:block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        /*background: #2c3e50; */
+        background: #273849;
+        opacity: 100%;
+        top: 0px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+
+    }
+    a:hover, a.active{
+        background: none;
+        color: tomato;
+        
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*don't put picture into another
+folder within the project folder...
+for some reason it didn't work...*/
+
+
+.intro__banner{
+    
+position: relative;
+    
+    background: url(images/studying.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+
+}
+
+#primary-content {
+    /*max-width: 66em; */
+    max-width: 72em;
+    margin: auto;
+    padding: 0 1.5em 0 1.5em;
+    background: rgb(245, 242, 242);
+    padding-top: 100px;
+    border-radius: 0.25em;
+    /*---*/
+    padding-bottom: 100px;
+}
+
+
+main {
+    padding-bottom: 1.5em;
+  /*  background: rgb(57, 68, 57); */
+    
+    width: 100%;
+}
+
+main img {
+
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
+/*
+main h1 {
+   /* font-size: 4.5em; */  */
+
+
+main {
+    
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.section__title__intro{
+    margin-bottom: .25em;
+    font-weight: inherit;
+    line-height: 1;
+    font-size: 50px;
+}
+
+/*play around with the font sizes*/
+
+.section__title__intro strong {
+    display: block;
+}
+
+.section__subtitle__intro {
+    margin: 0;
+    /*background: rgb(159, 161, 159); */
+    font-size: 30px;
+    margin-bottom: 1em;
+    max-width: 100%;
+    /*font: 36px "DM sans", sans-serif;*/
+    /*font-family: 'Times New Roman', Times, serif;*/
+    
+}
+
+/*start media querie*....that doesn't respond properly
+scratch that code/ 
+/*
+@media (min-width: 858px) {
+    .intro{
+        display: grid;
+        grid-template-areas: "img title" "img subtitle";
+        grid-template-columns: min-content max-content; 
+       }
+
+       .intro__img{
+           grid-area: img;
+           min-width: 150px;
+       }
+}
+
+*/
+
+.column {
+    float: right;
+  width: 50%;
+  padding: 10px;
+  /*height: 300px;*/
+}
+
+/*not sure what that does but it helps with that primary content*/
+
+.intro::after {
+    content: "";
+  display: flex;
+  clear: both;
+
+}
+
+.column_port {
+    float: right;
+  width: 50%;
+  padding: 10px;
+  /*height: 300px;*/
+}
+
+
+@media screen and (max-width: 600px) {
+    .column_port{
+        width: 100%;
+    }
+    
+
+}
+
+
+
+
+
+
+
+/*make profile pic smaller and a circle */
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .section__title__intro {
+        font-size: 35px;
+
+    }
+    .section__subtitle__intro {
+        font-size: 18px;
+    }
+
+
+
+    
+  }
+
+
+
+
+  
+
+/*
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky + #primary-content {
+    padding-top: 50px;
+  }
+*/
+
+/*start second (portfolio) page*/
+.pg2__banner {
+
+
+position: relative;
+    
+    background: url(images/long.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+/*------grid area for portfolio-----*/
+
+
+/*
+
+.item_water {grid-area: water;}
+.item_head_drawing {grid-area: head_art;}
+.item_body_drawing {grid-area: body_art;}
+.item_hb_video {grid-area: hb_video;}
+
+
+.portfolio_grid {
+    display: grid;
+    grid-template-areas:
+    'water head_art  ' 
+    'body_art hb_video';
+    
+    
+    width: 100%;
+    grid-gap: 10px;
+  background-color: none;
+  padding: 10px;
+
+  
+ 
+  
+
+}
+
+@media screen and (max-width: 1050px) {
+  .portfolio_grid {
+      grid-template-areas: 
+      'water'
+      'body_art'
+      'head_art'
+      'hb_video';
+      
+      align-items: center;
+      width: 100%;
+      
+    }
+  }
+
+*/
+
+
+
+
+
+
+
+
+
+/* third page*/
+
+.pg3__banner {
+
+
+    position: relative;
+        
+        background: url(images/lights.jpg) no-repeat;
+        background-size: cover;
+        height: calc(100vh - 80px);
+    }
+
+
+/* fourth page */
+
+.form{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+
+
+.form input, .form textarea{
+    width: 100%;
+    padding: 5px;
+    /* size of font in the box */
+    font-size: 18px;
+    border: 1px solid grey;
+    margin-top: 5px;
+
+}
+
+textarea{
+    resize: vertical;
+}
+
+button[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: .25em;
+    background: #a5a399;
+    text-align: center;
+    margin-top: 10px;
+    color:white;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+button:hover{
+    background-color: rgb(185, 172, 172);
+}
